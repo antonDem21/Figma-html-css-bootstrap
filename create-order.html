@@ -23,7 +23,7 @@
 </head>
 
 <body>
-  <div class="container-fluid mt-5">
+  <div class="container-fluid mt-5 mx-5">
     <h3 class="mb-3">Create Order</h3>
     <div class="row">
       <div class="col-md-6 col-sm-12 col-xs-12">
@@ -31,7 +31,7 @@
           <!-- Order Number -->
           <div class="form-group form-row align-items-center">
             <div class="col-md-4">
-              <label for="orderNumber" class="mr-5 mt-2 text-uppercase">Order Number</label>
+              <label for="orderNumber" class="mt-2 text-uppercase">Order Number</label>
             </div>
             <div class="col-md-4">
               <input type="email" class="form-control" id="orderNumber" placeholder="e.g. VT-INT-00000">
@@ -40,7 +40,7 @@
           <!-- Job Type -->
           <div class="form-group form-row align-items-center">
             <div class="col-md-4">
-              <label for="jobType" class="mr-5 mt-2 text-uppercase">Job Type</label>
+              <label for="jobType" class="mt-2 text-uppercase">Job Type</label>
             </div>
             <div class="col-md-4">
               <select id="jobType" class="form-control selectpicker" data-live-search="true" searchable="Search here..">
@@ -54,7 +54,7 @@
           <!-- Effective Date -->
           <div class="form-group form-row align-items-center">
             <div class="col-md-4">
-              <label for="orderNumber" class="mr-5 mt-2 text-uppercase">Effective Date</label>
+              <label for="orderNumber" class="mt-2 text-uppercase">Effective Date</label>
             </div>
             <div class="col-md-4">
               <input type="date" class="form-control" name="date" />
@@ -63,7 +63,7 @@
           <!-- Intended Use -->
           <div class="form-group form-row align-items-center">
             <div class="col-md-4">
-              <label for="jobType" class="mr-5 mt-2 text-uppercase">Intended Use</label>
+              <label for="jobType" class="mt-2 text-uppercase">Intended Use</label>
             </div>
             <div class="col-md-4">
               <select id="intendedUse" class="form-control selectpicker" data-live-search="true">
@@ -79,12 +79,12 @@
           <div class="form-group">
             <div class="mb-2 form-row align-items-center">
               <div class="col-md-12">
-                <h4>Borrower Information</h4>
+                <h4 class="mt-2">Borrower Information</h4>
               </div>
             </div>
             <div class="form-row align-items-center">
               <div class="col-md-4">
-                <label for="orderNumber" class="mr-5 mt-2 text-uppercase">Borrower Name</label>
+                <label for="orderNumber" class="mt-2 text-uppercase">Borrower Name</label>
               </div>
               <div class="col-md-5">
                 <input type="email" class="form-control" id="orderNumber" placeholder="e.g. Cameron Williamson">
@@ -92,7 +92,7 @@
             </div>
             <div class="form-row align-items-center mt-3">
               <div class="col-md-4">
-                <label for="orderNumber" class="mr-5 mt-2 text-uppercase">Co-Borrower Name</label>
+                <label for="orderNumber" class="mt-2 text-uppercase">Co-Borrower Name</label>
               </div>
               <div class="col-md-5">
                 <input type="email" class="form-control" id="orderNumber" placeholder="e.g. Brooklyn Simmons">
@@ -124,26 +124,86 @@
                 <div class="modal-dialog modal-dialog-centered " role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle">Add Client</h5>
+                      <h5 class="modal-title ml-4 mt-4" id="exampleModalLongTitle">Add Client</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                       </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body mx-4">
                       <form>
+                        <!-- Modal Company Name -->
                         <div class="form-group form-row align-items-center">
                           <div class="col-md-5">
-                            <label for="orderNumber" class="mr-5 mt-2 text-uppercase">Order Number</label>
+                            <label for="companyName" class="mt-2 text-uppercase">Company Name</label>
                           </div>
                           <div class="col-md-7">
-                            <input type="email" class="form-control" id="orderNumber" placeholder="e.g. VT-INT-00000">
+                            <input type="text" class="form-control" id="companyName"
+                              placeholder="e.g. Real Home Estate">
+                          </div>
+                        </div>
+                        <!-- Modal Address -->
+                        <div class="form-group form-row align-items-center">
+                          <div class="col-md-5">
+                            <label for="address" class="mt-2 text-uppercase">Address</label>
+                          </div>
+                          <div class="col-md-7">
+                            <input type="text" class="form-control" id="address" placeholder="e.g. 1234 Garnet Ave #3B">
+                          </div>
+                        </div>
+                        <!-- Modal City -->
+                        <div class="form-group form-row align-items-center">
+                          <div class="col-md-5">
+                            <label for="city" class="mt-2 text-uppercase">City</label>
+                          </div>
+                          <div class="col-md-6">
+                            <input type="text" class="form-control" id="city" placeholder="e.g. San Diego">
+                          </div>
+                        </div>
+                        <!-- Modal State -->
+                        <div class="form-group form-row align-items-center">
+                          <div class="col-md-5">
+                            <label for="state" class="mt-2 text-uppercase">State</label>
+                          </div>
+                          <div class="col-md-3">
+                            <input type="text" class="form-control" id="state" placeholder="e.g. CA">
+                          </div>
+                        </div>
+                        <!-- Modal Zip -->
+                        <div class="form-group form-row align-items-center">
+                          <div class="col-md-5">
+                            <label for="zip" class="mt-2 text-uppercase">Zip</label>
+                          </div>
+                          <div class="col-md-3">
+                            <input type="text" class="form-control" id="zip" placeholder="00000">
+                          </div>
+                        </div>
+                        <!-- Modal Phone -->
+                        <div class="form-group form-row align-items-center">
+                          <div class="col-md-5">
+                            <label for="phone" class="mt-2 text-uppercase">Phone</label>
+                          </div>
+                          <div class="col-md-4">
+                            <input type="tel" class="form-control" id="phone" placeholder="(000)000-0000">
+                          </div>
+                        </div>
+                        <!-- Modal Email -->
+                        <div class="form-group form-row align-items-center">
+                          <div class="col-md-5">
+                            <label for="email" class="mt-2 text-uppercase">Email</label>
+                          </div>
+                          <div class="col-md-6">
+                            <input type="email" class="form-control" id="email" placeholder="e.g. example@mail.com">
                           </div>
                         </div>
                       </form>
                     </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
+                    <div class="modal-footer float-center mb-4">
+                      <button type="button" class="btn btn-outline-success rounded-pill" data-dismiss="modal">
+                        <span class="mx-2">Discard & Close</span>
+                      </button>
+                      <button type="button" class="btn btn-success rounded-pill">
+                        <span class="mx-4">Add Client</span>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -151,7 +211,7 @@
             </div>
             <div class="form-row align-items-center">
               <div class="col-md-4">
-                <label for="jobType" class="mr-5 mt-2 text-uppercase">Client</label>
+                <label for="jobType" class="mt-2 text-uppercase">Client</label>
               </div>
               <div class="col-md-6">
                 <select id="intendedUse" class="form-control selectpicker" data-live-search="true">
@@ -173,12 +233,12 @@
           <div class="form-group">
             <div class="mb-2 form-row align-items-center">
               <div class="col-md-12">
-                <h4>Subject Information</h4>
+                <h4 class="mt-2">Subject Information</h4>
               </div>
             </div>
             <div class="form-row align-items-center">
               <div class="col-md-4">
-                <label for="subjectInformation" class="mr-5 mt-2 text-uppercase">Subject Address</label>
+                <label for="subjectInformation" class="mt-2 text-uppercase">Subject Address</label>
               </div>
               <div class="col-md-6">
                 <input type="email" class="form-control" id="subjectInformation"
@@ -188,7 +248,7 @@
           </div>
 
           <!-- Verify Subject Button -->
-          <button class="btn btn-success rounded-pill mt-4">
+          <button type="button" class="btn btn-success rounded-pill mt-4">
             <span class="mx-2">Verify Subject</span>
           </button>
         </form>
