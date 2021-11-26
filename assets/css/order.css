@@ -8,3 +8,19 @@
   border-top: none;
   justify-content: space-evenly;
 }
+.btn-light {
+  background-color: white !important;
+}
+.btn-light:focus {
+  box-shadow: none !important;
+}
+.bootstrap-select .dropdown-toggle:focus {
+  outline: none !important;
+}
+.bootstrap-select>.dropdown-toggle.bs-placeholder, .bootstrap-select>.dropdown-toggle.bs-placeholder {
+  border-color: #d3d9df;
+}
+.form-control:focus {
+  border-color: #54AC6D !important;
+  box-shadow: 0 0 0 0.2rem rgb(8 122 23 / 25%) !important;
+}
