@@ -24,3 +24,10 @@
   border-color: #54AC6D !important;
   box-shadow: 0 0 0 0.2rem rgb(8 122 23 / 25%) !important;
 }
+.btn-add-client{
+  border-color: white;
+  background-color: white;
+}
+.btn-add-client:hover{
+  border-color: #54AC6D;
+}
