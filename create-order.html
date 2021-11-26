@@ -18,26 +18,26 @@
 </head>
 
 <body>
-  <div class="container-fluid mt-5 mx-5">
+  <div class="container mt-5">
     <h3 class="mb-3">Create Order</h3>
     <div class="row">
-      <div class="col-md-6 col-sm-12 col-xs-12">
+      <div class="col-md-12 col-sm-10 col-xs-10">
         <form>
           <!-- Order Number -->
           <div class="form-group form-row align-items-center">
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6 col-xs-6">
               <label for="orderNumber" class="mt-2 text-uppercase">Order Number</label>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6 col-xs-6">
               <input type="email" class="form-control" id="orderNumber" placeholder="e.g. VT-INT-00000">
             </div>
           </div>
           <!-- Job Type -->
           <div class="form-group form-row align-items-center">
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6 col-xs-6">
               <label for="jobType" class="mt-2 text-uppercase">Job Type</label>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6 col-xs-6">
               <select id="jobType" class="form-control selectpicker" data-live-search="true" searchable="Search here..">
                 <option value="" disabled selected>Job type</option>
                 <option value="1">1</option>
@@ -48,19 +48,19 @@
           </div>
           <!-- Effective Date -->
           <div class="form-group form-row align-items-center">
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6 col-xs-6">
               <label for="orderNumber" class="mt-2 text-uppercase">Effective Date</label>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col-xs-6">
               <input type="date" class="form-control w-75" name="date" />
             </div>
           </div>
           <!-- Intended Use -->
           <div class="form-group form-row align-items-center">
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6 col-xs-6">
               <label for="jobType" class="mt-2 text-uppercase">Intended Use</label>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6 col-xs-6">
               <select id="intendedUse" class="form-control selectpicker" data-live-search="true">
                 <option value="" disabled selected>Select intended use</option>
                 <option value="1">1</option>
@@ -78,18 +78,18 @@
               </div>
             </div>
             <div class="form-row align-items-center">
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-6 col-xs-6">
                 <label for="orderNumber" class="mt-2 text-uppercase">Borrower Name</label>
               </div>
-              <div class="col-md-5">
+              <div class="col-md-5 col-sm-6 col-xs-6">
                 <input type="email" class="form-control" id="orderNumber">
               </div>
             </div>
             <div class="form-row align-items-center mt-3">
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-6 col-xs-6">
                 <label for="orderNumber" class="mt-2 text-uppercase">Co-Borrower Name</label>
               </div>
-              <div class="col-md-5">
+              <div class="col-md-5 col-sm-6 col-xs-6">
                 <input type="email" class="form-control" id="orderNumber">
               </div>
             </div>
@@ -98,12 +98,13 @@
           <!-- Client Information -->
           <div class="form-group">
             <div class="mb-2 form-row align-items-center">
-              <div class="col-md-6">
+              <div class="col-md-6 col-sm-6 col-xs-6">
                 <h4 class="mt-2">Client Information</h4>
               </div>
-              <div class="col-md-4">
-                <button type="button" class="btn btn-light rounded-pill float-right text-success btn-add-client"
-                  data-toggle="modal" data-target="#addClient">
+              <div class="col-md-4 col-sm-6 col-xs-6">
+                <button id="btn-add-client" type="button"
+                  class="btn btn-light rounded-pill float-right text-success btn-add-client" data-toggle="modal"
+                  data-target="#addClient">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-plus-circle mr-1 mb-1" viewBox="0 0 16 16">
                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
@@ -205,10 +206,10 @@
               </div>
             </div>
             <div class="form-row align-items-center">
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-6 col-xs-6">
                 <label for="jobType" class="mt-2 text-uppercase">Client</label>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 col-sm-6 col-xs-6">
                 <select id="intendedUse" class="form-control selectpicker" data-live-search="true">
                   <option value="" disabled selected>Select client</option>
                   <option value="Residential Wholesale Mortgage">Residential Wholesale Mortgage</option>
@@ -232,17 +233,17 @@
               </div>
             </div>
             <div class="form-row align-items-center">
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-6 col-xs-6">
                 <label for="subjectInformation" class="mt-2 text-uppercase">Subject Address</label>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 col-sm-6 col-xs-6">
                 <input type="email" class="form-control" id="subjectInformation" placeholder="Diego, CA, 92109, USA">
               </div>
             </div>
           </div>
 
           <!-- Verify Subject Button -->
-          <button type="button" class="btn btn-success rounded-pill mt-4">
+          <button type="button" class="btn btn-success rounded-pill my-4">
             <span class="mx-2">Verify Subject</span>
           </button>
         </form>

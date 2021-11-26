@@ -73,3 +73,9 @@ button.close {
 .search-custom-panel-icon {
   opacity: .5;
 }
+
+@media only screen and (max-width: 575px) {
+  #btn-add-client {
+    float: left !important;
+  }
+}
