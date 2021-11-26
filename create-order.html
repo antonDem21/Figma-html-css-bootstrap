@@ -24,11 +24,11 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid mt-5">
+    <h3 class="mb-3">Create Order</h3>
     <div class="row">
       <div class="col-md-6 col-sm-12 col-xs-12">
         <form>
-          <h3 class="mb-3">Create Order</h3>
           <!-- Order Number -->
           <div class="form-group form-row align-items-center">
             <div class="col-md-4">
@@ -44,10 +44,12 @@
               <label for="jobType" class="mr-5 text-uppercase">Job Type</label>
             </div>
             <div class="col-md-8">
-              <select id="jobType" class="form-control selectpicker w-50" data-live-search="true">
-                <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
-                <option data-tokens="mustard">Burger, Shake and a Smile</option>
-                <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+              <select id="jobType" class="form-control selectpicker w-50" data-live-search="true"
+                searchable="Search here..">
+                <option value="" disabled selected>Job type</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
               </select>
             </div>
           </div>
@@ -67,31 +69,36 @@
             </div>
             <div class="col-md-8">
               <select id="intendedUse" class="form-control selectpicker w-50" data-live-search="true">
-                <option data-tokens="1">1</option>
-                <option data-tokens="2">2</option>
-                <option data-tokens="3">3</option>
+                <option value="" disabled selected>Select intended use</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
               </select>
             </div>
           </div>
 
           <!-- Borrower Information -->
-          <h4 class="mb-3">Borrower Information</h4>
-          <!-- Borrower Name -->
-          <div class="form-group form-row align-items-center">
-            <div class="col-md-4">
-              <label for="orderNumber" class="mr-5 text-uppercase">Borrower Name</label>
+          <div class="form-group">
+            <div class="mb-2 form-row align-items-center">
+              <div class="col-md-12">
+                <h4>Borrower Information</h4>
+              </div>
             </div>
-            <div class="col-md-8">
-              <input type="email" class="form-control w-75" id="orderNumber" placeholder="e.g. Cameron Williamson">
+            <div class="form-row align-items-center">
+              <div class="col-md-4">
+                <label for="orderNumber" class="mr-5 text-uppercase">Borrower Name</label>
+              </div>
+              <div class="col-md-8">
+                <input type="email" class="form-control w-75" id="orderNumber" placeholder="e.g. Cameron Williamson">
+              </div>
             </div>
-          </div>
-          <!-- Co-Borrower Name -->
-          <div class="form-group form-row align-items-center">
-            <div class="col-md-4">
-              <label for="orderNumber" class="mr-5 text-uppercase">Co-Borrower Name</label>
-            </div>
-            <div class="col-md-8">
-              <input type="email" class="form-control w-75" id="orderNumber" placeholder="e.g. Brooklyn Simmons">
+            <div class="form-row align-items-center mt-3">
+              <div class="col-md-4">
+                <label for="orderNumber" class="mr-5 text-uppercase">Co-Borrower Name</label>
+              </div>
+              <div class="col-md-8">
+                <input type="email" class="form-control w-75" id="orderNumber" placeholder="e.g. Brooklyn Simmons">
+              </div>
             </div>
           </div>
 
@@ -119,38 +126,41 @@
               </div>
               <div class="col-md-8">
                 <select id="intendedUse" class="form-control selectpicker" data-live-search="true">
-                  <option data-tokens="Residential Wholesale Mortgage">Residential Wholesale Mortgage</option>
-                  <option data-tokens="Residential Wholesale Paradise">Residential Wholesale Paradise</option>
-                  <option data-tokens="Avanti Way Realty">Avanti Way Realty</option>
-                  <option data-tokens="Trident Real Estate & Trident Management">Trident Real Estate & Trident
+                  <option value="" disabled selected>Select client</option>
+                  <option value="Residential Wholesale Mortgage">Residential Wholesale Mortgage</option>
+                  <option value="Residential Wholesale Paradise">Residential Wholesale Paradise</option>
+                  <option value="Avanti Way Realty">Avanti Way Realty</option>
+                  <option value="Trident Real Estate & Trident Management">Trident Real Estate & Trident
                     Management</option>
-                  <option data-tokens="New Age Properties">New Age Properties</option>
-                  <option data-tokens="Aria Luxe Realty">Aria Luxe Realty</option>
-                  <option data-tokens="Cervera Real Estate Inc">Cervera Real Estate Inc</option>
+                  <option value="New Age Properties">New Age Properties</option>
+                  <option value="Aria Luxe Realty">Aria Luxe Realty</option>
+                  <option value="Cervera Real Estate Inc">Cervera Real Estate Inc</option>
                 </select>
               </div>
             </div>
           </div>
 
           <!-- Subject Information -->
-          <div class="mb-2 form-row align-items-center">
-            <div class="col-md-12">
-              <h4>Subject Information</h4>
+          <div class="form-group">
+            <div class="mb-2 form-row align-items-center">
+              <div class="col-md-12">
+                <h4>Subject Information</h4>
+              </div>
             </div>
-          </div>
-          <div class="form-row align-items-center">
-            <div class="col-md-4">
-              <label for="subjectInformation" class="mr-5 text-uppercase">Subject Address</label>
-            </div>
-            <div class="col-md-8">
-              <input type="email" class="form-control" id="subjectInformation"
-                placeholder="e.g. 0000 Emerald St, San Diego, CA, 92109, USA">
+            <div class="form-row align-items-center">
+              <div class="col-md-4">
+                <label for="subjectInformation" class="mr-5 text-uppercase">Subject Address</label>
+              </div>
+              <div class="col-md-8">
+                <input type="email" class="form-control" id="subjectInformation"
+                  placeholder="e.g. 0000 Emerald St, San Diego, CA, 92109, USA">
+              </div>
             </div>
           </div>
 
           <!-- Verify Subject Button -->
           <button class="btn btn-success rounded-pill mt-4">
-            <span>Verify Subject</span>
+            <span class="mx-2">Verify Subject</span>
           </button>
         </form>
       </div>
