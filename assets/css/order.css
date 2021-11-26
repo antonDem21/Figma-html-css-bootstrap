@@ -17,6 +17,9 @@
 .bootstrap-select .dropdown-toggle:focus {
   outline: none !important;
 }
+.bootstrap-select .dropdown-toggle {
+  outline: none !important;
+}
 .bootstrap-select>.dropdown-toggle.bs-placeholder, .bootstrap-select>.dropdown-toggle.bs-placeholder {
   border-color: #d3d9df;
 }
@@ -30,4 +33,27 @@
 }
 .btn-add-client:hover{
   border-color: #54AC6D;
+}
+
+.dropdown-item.active {
+  background-color: #54AC6D !important;
+}
+
+.dropdown-item:active {
+  background-color: #54AC6D !important;
+}
+
+.dropdown-item.disabled.active {
+  background-color: white !important;
+}
+
+.bs-searchbox input {
+  padding-left: 2rem;
+}
+
+.select-search-icon {
+  position: absolute !important;
+  top: 23px;
+  left: 17px;
+  color: dimgray;
 }
