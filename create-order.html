@@ -12,13 +12,12 @@
 
   <!-- Bootstrap Select CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
-  <!-- Include Bootstrap Datepicker -->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" />
+
+  <!-- Font CSS -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+  <link rel="stylesheet" href="assets/css/order.css">
 
   <title>Create Order</title>
 </head>
@@ -34,8 +33,8 @@
             <div class="col-md-4">
               <label for="orderNumber" class="mr-5 text-uppercase">Order Number</label>
             </div>
-            <div class="col-md-8">
-              <input type="email" class="form-control w-50" id="orderNumber" placeholder="e.g. VT-INT-00000">
+            <div class="col-md-4">
+              <input type="email" class="form-control" id="orderNumber" placeholder="e.g. VT-INT-00000">
             </div>
           </div>
           <!-- Job Type -->
@@ -43,9 +42,8 @@
             <div class="col-md-4">
               <label for="jobType" class="mr-5 text-uppercase">Job Type</label>
             </div>
-            <div class="col-md-8">
-              <select id="jobType" class="form-control selectpicker w-50" data-live-search="true"
-                searchable="Search here..">
+            <div class="col-md-4">
+              <select id="jobType" class="form-control selectpicker" data-live-search="true" searchable="Search here..">
                 <option value="" disabled selected>Job type</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -58,8 +56,8 @@
             <div class="col-md-4">
               <label for="orderNumber" class="mr-5 text-uppercase">Effective Date</label>
             </div>
-            <div class="col-md-8">
-              datepicker
+            <div class="col-md-4">
+              <input type="date" class="form-control" name="date" />
             </div>
           </div>
           <!-- Intended Use -->
@@ -67,8 +65,8 @@
             <div class="col-md-4">
               <label for="jobType" class="mr-5 text-uppercase">Intended Use</label>
             </div>
-            <div class="col-md-8">
-              <select id="intendedUse" class="form-control selectpicker w-50" data-live-search="true">
+            <div class="col-md-4">
+              <select id="intendedUse" class="form-control selectpicker" data-live-search="true">
                 <option value="" disabled selected>Select intended use</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -88,16 +86,16 @@
               <div class="col-md-4">
                 <label for="orderNumber" class="mr-5 text-uppercase">Borrower Name</label>
               </div>
-              <div class="col-md-8">
-                <input type="email" class="form-control w-75" id="orderNumber" placeholder="e.g. Cameron Williamson">
+              <div class="col-md-5">
+                <input type="email" class="form-control" id="orderNumber" placeholder="e.g. Cameron Williamson">
               </div>
             </div>
             <div class="form-row align-items-center mt-3">
               <div class="col-md-4">
                 <label for="orderNumber" class="mr-5 text-uppercase">Co-Borrower Name</label>
               </div>
-              <div class="col-md-8">
-                <input type="email" class="form-control w-75" id="orderNumber" placeholder="e.g. Brooklyn Simmons">
+              <div class="col-md-5">
+                <input type="email" class="form-control" id="orderNumber" placeholder="e.g. Brooklyn Simmons">
               </div>
             </div>
           </div>
@@ -108,7 +106,7 @@
               <div class="col-md-6">
                 <h4>Client Information</h4>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-4">
                 <button type="button" class="btn btn-light rounded-pill float-right text-success">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-plus-circle mr-1 mb-1" viewBox="0 0 16 16">
@@ -124,7 +122,7 @@
               <div class="col-md-4">
                 <label for="jobType" class="mr-5 text-uppercase">Client</label>
               </div>
-              <div class="col-md-8">
+              <div class="col-md-6">
                 <select id="intendedUse" class="form-control selectpicker" data-live-search="true">
                   <option value="" disabled selected>Select client</option>
                   <option value="Residential Wholesale Mortgage">Residential Wholesale Mortgage</option>
@@ -151,7 +149,7 @@
               <div class="col-md-4">
                 <label for="subjectInformation" class="mr-5 text-uppercase">Subject Address</label>
               </div>
-              <div class="col-md-8">
+              <div class="col-md-6">
                 <input type="email" class="form-control" id="subjectInformation"
                   placeholder="e.g. 0000 Emerald St, San Diego, CA, 92109, USA">
               </div>
@@ -180,8 +178,6 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
   <script type="text/javascript">
     $(function () {
       $('.selectpicker').selectpicker();
