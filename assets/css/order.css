@@ -57,3 +57,19 @@
   left: 17px;
   color: dimgray;
 }
+
+button.close {
+  outline: none;
+}
+
+.select-custom-panel {
+  width: 80%;
+  margin: 0 auto;
+  color: grey;
+  text-align: center;
+  justify-content: center;
+}
+
+.search-custom-panel-icon {
+  opacity: .5;
+}
